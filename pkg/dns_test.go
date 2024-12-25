@@ -7,7 +7,7 @@ import (
 
 func TestDNSClient_lookupDomain4(t *testing.T) {
 	c := Config{
-		UpstreamDNS: "tcp://1.1.1.1:53",
+		UpstreamDNS: "tcp://8.8.8.8:53",
 	}
 	dnsc, err := NewDNSClient(&c, c.UpstreamDNS, true, "")
 	if err != nil {
